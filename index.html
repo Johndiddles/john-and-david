@@ -1,16 +1,96 @@
-<h1 id= "title"> survey form</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<p id="description">please put in your details</p>
+  <body>
+    <h1 id="title">survey form</h1>
 
-<form id="survey-form"></form>
-<label for="name" id="name-label">Name</label>
-<input type ="text" name="name" placeholder="enter name" required>
-<br>
-<label for="email" id="email=label">Email</label>
-<input type="email" name="email" id="email-label"
-placeholder="name@gamil.com" required>
-<br>
-<label for="number" id="number-label" number of...> </label>
-<input type="number" name ="number" placeholder="1"
-min="1" max="50" required>
-</form>
+    <p id="description">please put in your details</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="enter name"
+        required
+      />
+      <br />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="name@gamil.com"
+        required
+      />
+      <br />
+      <label for="number" id="number-label">Number </label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="1"
+        min="1"
+        max="50"
+        required
+      />
+      <br />
+      <label for="gender">Gender</label>
+      <select name="gender" id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br />
+      <label for="radio">Radio</label>
+      <input type="radio" name="radio" id="radio" value="radioOne" />
+      <label for="radio">Radio 2</label>
+      <input type="radio" name="radio" id="radio2" value="radioTwo" />
+
+      <br />
+      <label for="checkbox">Checkbox</label>
+      <input
+        type="checkbox"
+        id="checkbox1"
+        name="checkbox"
+        value="checkboxOne"
+      />
+      <label for="checkbox">Checkbox2</label>
+      <input
+        type="checkbox"
+        id="checkbox2"
+        name="checkbox"
+        value="checkboxTwo"
+      />
+      <br />
+      <label for="textarea">Textarea</label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      <br />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
